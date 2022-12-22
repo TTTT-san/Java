@@ -37,37 +37,37 @@ public class Main {
 
         System.out.println("---Esercizio 3:  ");
         System.out.println("--Rettangolo: ");
-        System.out.print("base: ");
+        System.out.print("Inserire base: ");
         int base= input.nextInt();
-        System.out.print("altezza:");
+        System.out.print("Inserire altezza:");
         int altezza= input.nextInt();
         int area=areaRetQuad(base,altezza);
         System.out.println("Area: "+areaRetQuad(base,altezza)+ " Perimetro: "+perRetQuad(base,altezza));
 
         System.out.println("--Quadrato: ");
-        System.out.print("lato:");
+        System.out.print("Inserire lato:");
         int lato = input.nextInt();
         System.out.println("Area: "+areaRetQuad(lato,lato)+ " Perimetro: "+perRetQuad(lato,lato));
 
         System.out.println("--Cerchio: ");
-        System.out.print("raggio:");
+        System.out.print("Inserire raggio:");
         int r = input.nextInt();
         System.out.println("Area: "+areaCerchio(r)+" Perimetro: "+perCerchio(r));
 
 
         System.out.println("--Triangolo Equilatero ");
-        System.out.print("base:");
+        System.out.print("Inserire base:");
         lato = input.nextInt();
         System.out.println("Area: "+areaTriangolo(lato)+ " Perimetro: "+perTriangolo(lato));
 
         System.out.println("---Esercizio 4:  ");
-        System.out.print("Giorno: ");
+        System.out.print("Inserire Giorno: ");
         int g = input.nextInt();
-        System.out.print("Ore: ");
+        System.out.print("Inserire Ore: ");
         int ore = input.nextInt();
-        System.out.print("Minuti: ");
+        System.out.print("Inserire Minuti: ");
         int m = input.nextInt();
-        System.out.print("Secondi: ");
+        System.out.print("Inserire Secondi: ");
         int s = input.nextInt();
         int stot= (g*24*60*60)+(ore*60*60)+(m*60)+s; //calcolo secondi dei input giorno, ore e minuti
         System.out.println("I secondi sono: "+stot);
