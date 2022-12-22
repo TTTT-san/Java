@@ -26,12 +26,12 @@ public class Main {
 
 
 
-        return "DD: "+ d+" HH: "+h +" mm" + m+ " s:"+stot;
+        return "-DD: "+ d+" -HH: "+h +" -mm: " + m+ " -s: "+stot;
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("---Esercizio 5");
-        System.out.print("Secondi:");
+        System.out.print("Inserire Secondi:");
         int s = in.nextInt();
         System.out.println(convertSecondi(s));
     }
