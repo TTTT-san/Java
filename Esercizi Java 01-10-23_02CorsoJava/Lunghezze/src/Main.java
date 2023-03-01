@@ -3,24 +3,26 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        StringBuilder myString = new StringBuilder();
-        String s=".";
-        String vuoto ="";
-        while(!s.equals(vuoto)){
-            System.out.println("Inserire la stringa: " +
-                    "\n solo INVIO per Terminare ");
-            s = in.nextLine();
-            if(s.length()>0){
-                if(Character.isUpperCase(s.charAt(0))){
-                    myString.append(s);
+        String parola = null;
+        int tot = 0;
 
-                }
-            }
+       do {
+           System.out.println("Inserire la parola: ");
+           parola = in.nextLine();
 
-        }
 
-        System.out.println("La lunghezza dei caratteri delle parole con inizile Maiuscola: "+myString.length());
+           if (parola.length() > 0) {
+               char c = parola.charAt(0);
+                   if (c >= 'A' && c <= 'Z') {
+                       tot += parola.length();
 
+                   }
+           }
+
+       }while (parola.length()>0);
+
+
+        System.out.println("Lunghezza totale: "+tot);
 
 
     }
